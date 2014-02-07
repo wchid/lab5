@@ -20,11 +20,14 @@
 </head>
 
 <body>
+	<h2>
+		<h3>New Friend {{newName}} Added!</h3>
+	</h2>
 	<div class="container">
 		<h1>My HCI Friends</h1>
-		{{#each friends}}
+		{{#each data.friends}}
 			<div class="friend">
-				<img src="{{imageURL}}" class="img-responsive img-rounded" alt="Fake Friend">
+				<img src="{{imageURL}}" class="img-responsive img-rounded" alt="{{name}}">
 				<h3>
 					<a href="#">{{name}}</a>
 				</h3>
